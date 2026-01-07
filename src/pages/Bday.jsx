@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-import music from "../assets/music2.mp3";
 
 export default function BirthdayFinal() {
     const [show, setShow] = useState(false);
@@ -28,7 +27,8 @@ export default function BirthdayFinal() {
 
     return (
         <div className="min-h-screen p-20 flex items-center justify-center bg-gradient-to-br from-pink-100 via-rose-100 to-pink-200 px-4">
-            <audio ref={audioRef} src={music} loop />
+            <audio ref={audioRef} src="/music2.mp3" loop />
+
             <div
                 className={`max-w-3xl w-full bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-12 transition-all duration-1000 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
                     }`}
